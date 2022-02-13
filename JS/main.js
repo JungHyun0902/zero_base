@@ -34,14 +34,14 @@ console.log(typeof arr);
 console.log(typeof a); */
 
 // ch. 10 객체복사 문제점
-let user = {
-  name: 'john',
-  age: 27,
-  sizes: {
-    height: 180,
-    weight: 72
-  }
-};
+// let user = {
+//   name: 'john',
+//   age: 27,
+//   sizes: {
+//     height: 180,
+//     weight: 72
+//   }
+// };
 
 /* 얕은 복사 1 - for loop
 let admin = {};
@@ -75,8 +75,8 @@ let admin = { ...user };
 // admin.age = 34;
 // console.log(admin.age);
 // console.log(user.age);
-let b = 6;
-let c = 8;
-let a = (b > c) ? b - c : c - b;
+// let b = 6;
+// let c = 8;
+// let a = (b > c) ? b - c : c - b;
 
-console.log(a);
+// console.log(a);
