@@ -11,5 +11,21 @@ function descending_order (x, y) {
 }
 
 console.log(nums.sort(ascending_order));
-console.log(nums.reverse(descending_order));
+console.log(nums.sort(descending_order)); // nums.reverse(descending_order)도 동일한 결과 ?!
+
+
+let fruits = ['apple', 'Orange', 'melon', 'orange'];
+console.log(fruits.sort()); // [ 'Orange', 'apple', 'melon', 'orange' ]
+
+function a_order (x, y) {
+  x = x.toUpperCase();
+  y = y.toUpperCase();
+
+  if(x > y) return 1;
+  else if (y > x) return -1;
+  else return 0;
+}
+console.log(fruits.sort(a_order)); // [ 'apple', 'melon', 'Orange', 'orange' ]
+
+
 
