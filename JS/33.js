@@ -21,11 +21,19 @@ function a_order (x, y) {
   x = x.toUpperCase();
   y = y.toUpperCase();
 
-  if(x > y) return 1;
+  if (x > y) return 1;
   else if (y > x) return -1;
   else return 0;
 }
-console.log(fruits.sort(a_order)); // [ 'apple', 'melon', 'Orange', 'orange' ]
+function d_order (x, y) {
+  x = x.toUpperCase();
+  y = y.toUpperCase();
 
+  if(x < y) return 1;
+  else if (y < x) return -1;
+  else return 0;
+}
+console.log(fruits.sort(a_order)); // [ 'apple', 'melon', 'Orange', 'orange' ]
+console.log(fruits.sort(d_order)); // [ 'Orange', 'orange', 'melon', 'apple' ]
 
 
