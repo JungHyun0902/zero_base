@@ -60,3 +60,17 @@ console.log(filter_age);
   { name: 'alice', age: 27, job: true }
 ]
 */
+
+// reduce - 요소별 함수 수행 누적 결과값 반환
+let nums = [1, 2, 3, 4, 5];
+let call_count = 0;
+
+console.log('result\tvalue\tindex');
+let sum = nums.reduce(function(accumulator, item, index, array) {
+  console.log(accumulator, '\t\t', item, '\t\t', index);
+  call_count++
+  return accumulator + item;
+}, 0); // initial 없다면 1부터 시작 
+
+console.log(call_count); // 5 
+console.log(sum); // 15 
