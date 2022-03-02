@@ -3,6 +3,7 @@
 /* user code */
 function answer(nums, target) {
   // 코드 구현 시작 영역
+  /*
   for (let i = 0; i < nums.length; i++) {
     for(let j = i + 1; j < nums.length; j++) {
       if(target == nums[i] + nums[j]) {
@@ -10,6 +11,16 @@ function answer(nums, target) {
       }
     }
   }
+  return [];
+  */ 
+  let map = {};
+  for(let i = 0; i < nums.length; i++) {
+    if(map[target - nums[i]] != undefined) {
+      return [map[target - nums[i]], i];
+    }
+    map[nums[i]] = i;
+  }
+  return [];
   // 코드 구현 종료 영역
 }
 
